@@ -2,6 +2,12 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT License. See License.txt in the project root for license information.
 
-module Azure end
-module Azure::Network end
-module Azure::Network::Mgmt end
+require '2020-08-01/generated/azure_mgmt_network'
+require '2019-06-01/generated/azure_mgmt_network'
+require '2017-10-01/generated/azure_mgmt_network'
+require '2017-03-30/generated/azure_mgmt_network'
+require '2015-06-15/generated/azure_mgmt_network'
+require 'profiles/latest/network_latest_profile_client'
+require 'profiles/v2017_03_09/network_v2017_03_09_profile_client'
+require 'profiles/v2019_03_01_hybrid/network_v2019_03_01_hybrid_profile_client'
+require 'profiles/v2018_03_01/network_v2018_03_01_profile_client'

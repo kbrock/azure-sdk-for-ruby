@@ -2,8 +2,18 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT License. See License.txt in the project root for license information.
 
-module Azure end
-module Azure::Monitor end
-module Azure::Monitor::Mgmt end
-
-
+require '2015-04-01/generated/azure_mgmt_monitor'
+require '2020-10-01/generated/azure_mgmt_monitor'
+require '2019-06-01/generated/azure_mgmt_monitor'
+require '2017-12-01-preview/generated/azure_mgmt_monitor'
+require '2018-04-16/generated/azure_mgmt_monitor'
+require '2016-03-01/generated/azure_mgmt_monitor'
+require '2017-11-01-preview/generated/azure_mgmt_monitor'
+require '2019-03-01/generated/azure_mgmt_monitor'
+require '2018-11-27-preview/generated/azure_mgmt_monitor'
+require '2018-01-01/generated/azure_mgmt_monitor'
+require '2017-05-01-preview/generated/azure_mgmt_monitor'
+require '2019-10-17-preview/generated/azure_mgmt_monitor'
+require '2018-03-01/generated/azure_mgmt_monitor'
+require 'profiles/latest/monitor_latest_profile_client'
+require 'profiles/v2019_03_01_hybrid/monitor_v2019_03_01_hybrid_profile_client'

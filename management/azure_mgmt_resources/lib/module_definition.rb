@@ -2,6 +2,11 @@
 # Copyright (c) Microsoft Corporation. All rights reserved.
 # Licensed under the MIT License. See License.txt in the project root for license information.
 
-module Azure end
-module Azure::Resources end
-module Azure::Resources::Mgmt end
+require '2020-06-01/generated/azure_mgmt_resources'
+require '2016-02-01/generated/azure_mgmt_resources'
+require '2018-02-01/generated/azure_mgmt_resources'
+require '2018-05-01/generated/azure_mgmt_resources'
+require 'profiles/latest/resources_latest_profile_client'
+require 'profiles/v2017_03_09/resources_v2017_03_09_profile_client'
+require 'profiles/v2019_03_01_hybrid/resources_v2019_03_01_hybrid_profile_client'
+require 'profiles/v2018_03_01/resources_v2018_03_01_profile_client'
